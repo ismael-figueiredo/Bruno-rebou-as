@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebouças Advocacia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-xh6O/C9+Y1F3z6VX8GcSx3rVYeMdm3WhZf9LhO1Z1EU0ur+j0t5B+cBxG6sFWAnOHtfS0gBMH2tW2Dav0r5Ang==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Rebouças Advocacia" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atuacao">Áreas de Atuação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content" data-animate>
+      <img src="assets/logo-square.png" alt="Rebouças Advocacia" class="hero-logo" />
+      <div class="hero-text">
+        <h1>Excelência e Ética em Cada Causa</h1>
+        <p>Atuação jurídica personalizada com foco em resultados concretos e atenção total ao cliente.</p>
+        <a href="#contato" class="btn">Fale Conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section" data-animate>
+    <div class="container">
+      <h2>Sobre o Escritório</h2>
+      <p>
+        A <strong>Rebouças Advocacia</strong> une excelência técnica com um compromisso inabalável em buscar justiça.
+        Trabalhamos lado a lado com nossos clientes para compreender suas necessidades e entregar estratégias
+        jurídicas personalizadas, transparentes e eficientes em cada etapa.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-highlight" data-animate>
+    <div class="container highlight-grid">
+      <div>
+        <h3>Consultoria Jurídica Inovadora</h3>
+        <p>Nossa abordagem centrada no cliente garante aconselhamento estratégico e personalizado, com foco em resultados concretos.</p>
+      </div>
+      <div>
+        <h3>Comprometimento e Obstinação</h3>
+        <p>Há mais de 5 anos atuando para solucionar questões em direito do consumidor, previdenciário e criminal, minimizando desigualdades e injustiças.</p>
+      </div>
+      <div>
+        <h3>Atendimento Humano</h3>
+        <p>Transparência, ética e proximidade em cada contato. Orientamos você desde o primeiro atendimento até a resolução completa do caso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="atuacao" class="section bg-dark" data-animate>
+    <div class="container">
+      <h2>Áreas de Atuação</h2>
+      <p class="section-lead">Conheça nossas principais frentes de atuação e descubra como podemos auxiliar você ou sua empresa.</p>
+
+      <div class="tab-area" role="tablist" aria-label="Áreas de Atuação">
+        <button class="tab-button is-active" role="tab" aria-selected="true" aria-controls="tab-consumidor" id="tab-btn-consumidor" data-tab="consumidor">
+          <i class="fa-solid fa-handshake"></i>
+          <span>Direito do Consumidor</span>
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-previdenciario" id="tab-btn-previdenciario" data-tab="previdenciario">
+          <i class="fa-solid fa-person-cane"></i>
+          <span>Direito Previdenciário</span>
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-criminal" id="tab-btn-criminal" data-tab="criminal">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <span>Direito Criminal</span>
+        </button>
+      </div>
+
+      <div class="tab-panels">
+        <article class="tab-panel is-active" id="tab-consumidor" role="tabpanel" aria-labelledby="tab-btn-consumidor" data-tab-panel="consumidor">
+          <div class="panel-content">
+            <div>
+              <h3>Direito do Consumidor</h3>
+              <p>Defendemos consumidores diante de abusos e falhas em relações de consumo, atuando com rapidez para restabelecer seus direitos.</p>
+            </div>
+            <ul class="icon-list">
+              <li><i class="fa-solid fa-building-columns"></i>Bancos e seguradoras</li>
+              <li><i class="fa-solid fa-car"></i>Acidentes de trânsito e vícios em veículos</li>
+              <li><i class="fa-solid fa-stethoscope"></i>Responsabilidade médica e hospitalar</li>
+              <li><i class="fa-solid fa-bolt"></i>Fornecedores de água, luz e telefonia</li>
+              <li><i class="fa-solid fa-ban"></i>Negativações e cortes indevidos</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="tab-previdenciario" role="tabpanel" aria-labelledby="tab-btn-previdenciario" data-tab-panel="previdenciario" hidden>
+          <div class="panel-content">
+            <div>
+              <h3>Direito Previdenciário</h3>
+              <p>Acompanhamos todo o processo previdenciário, do planejamento às revisões de benefícios, com atuação administrativa e judicial.</p>
+            </div>
+            <ul class="icon-list">
+              <li><i class="fa-solid fa-clipboard-check"></i>Aposentadorias por idade, tempo e invalidez</li>
+              <li><i class="fa-solid fa-sync"></i>Revisão de benefícios e cálculos</li>
+              <li><i class="fa-solid fa-gavel"></i>Representação perante o INSS e tribunais</li>
+              <li><i class="fa-solid fa-people-group"></i>Pensão por morte, auxílio-doença, reclusão</li>
+              <li><i class="fa-solid fa-chart-line"></i>Planejamento previdenciário completo</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="tab-criminal" role="tabpanel" aria-labelledby="tab-btn-criminal" data-tab-panel="criminal" hidden>
+          <div class="panel-content">
+            <div>
+              <h3>Direito Criminal</h3>
+              <p>Atuação dedicada e estratégica em todas as fases do processo penal, com plantão 24h e presença nos principais tribunais.</p>
+            </div>
+            <ul class="icon-list">
+              <li><i class="fa-solid fa-cannabis"></i>Defesa em crimes previstos na Lei de Drogas</li>
+              <li><i class="fa-solid fa-scale-unbalanced"></i>Tribunal do Júri e violência contra a pessoa</li>
+              <li><i class="fa-solid fa-people-robbery"></i>Organização criminosa, lavagem de dinheiro</li>
+              <li><i class="fa-solid fa-handcuffs"></i>Assistência em flagrantes e audiências de custódia</li>
+              <li><i class="fa-solid fa-door-open"></i>Habeas corpus, liberdade provisória e recursos</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-animate>
+    <div class="container profile-wrapper">
+      <div class="profile-card">
+        <div class="profile-photo">
+          <img src="assets/BRUNO_01.avif" alt="Dr. Bruno Rebouças" />
+        </div>
+        <div class="profile-content">
+          <h2>Dr. Bruno Rebouças</h2>
+          <p>Fundador do escritório, conduz cada caso com proximidade, transparência e obstinação para assegurar que seus clientes reivindiquem seus direitos com segurança jurídica.</p>
+          <ul class="profile-list">
+            <li><i class="fa-solid fa-trophy"></i>Experiência comprovada em litígios complexos</li>
+            <li><i class="fa-solid fa-user-shield"></i>Atendimento personalizado e estratégico</li>
+            <li><i class="fa-solid fa-scale-balanced"></i>Atuação ética e combativa em tribunais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-strip" data-animate>
+    <div class="container cta-content">
+      <div>
+        <h3>Agende uma consultoria</h3>
+        <p>Vamos construir juntos a melhor estratégia jurídica para o seu caso.</p>
+      </div>
+      <a href="#contato" class="btn btn-outline">Quero falar com o escritório</a>
+    </div>
+  </section>
+
+  <section id="contato" class="section" data-animate>
+    <div class="container contact-callout">
+      <h2>Contato</h2>
+      <p>Fale conosco pelos canais abaixo e agende sua consultoria com a equipe Rebouças Advocacia.</p>
+      <div class="contact-actions">
+        <a class="contact-pill" href="https://wa.me/5592999053525" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Conversar pelo WhatsApp</span>
+        </a>
+        <a class="contact-pill" href="mailto:brunoreboucas.adv@hotmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Enviar e-mail</span>
+        </a>
+        <a class="contact-pill is-disabled" href="#" aria-disabled="true" tabindex="-1">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram (em breve)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Rebouças Advocacia — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
